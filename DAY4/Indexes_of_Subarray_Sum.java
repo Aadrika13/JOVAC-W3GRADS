@@ -3,13 +3,19 @@ package DAY4;
 import java.util.*;
 public class Indexes_of_Subarray_Sum{
     public static void main(String[] args) {
-        int n = 5;
-        int s = 12;
-        int [] arr = {1,2,3,4,5};
-        ArrayList<Integer> ans = subarraySum(arr,n,s);
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int s = sc.nextInt();
+        int [] nums = new int[n];
+        for (int i = 0; i < nums.length; i++) {
+            nums[i] = sc.nextInt();
+        }
+        ArrayList<Integer> ans = subarraySum(nums,n,s);
         for (int i = 0; i < ans.size(); i++) {
             System.out.print(ans.get(i)+" ");
         }
+        sc.close();
+
     }
     public static ArrayList<Integer> subarraySum(int[] arr, int n, int s) {
         // Your code here

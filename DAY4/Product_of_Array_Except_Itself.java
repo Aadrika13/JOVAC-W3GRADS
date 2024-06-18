@@ -4,9 +4,15 @@ import java.util.*;
 
 public class Product_of_Array_Except_Itself {
     public static void main(String[] args) {
-        int [] nums = {1,2,3,4};
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int [] nums = new int[n];
+        for (int i = 0; i < nums.length; i++) {
+            nums[i] = sc.nextInt();
+        }
         int [] ans = productExceptSelf(nums);
         System.out.println(Arrays.toString(ans));
+        sc.close();
     }
     public static int[] productExceptSelf(int[] nums) {
         //extra space

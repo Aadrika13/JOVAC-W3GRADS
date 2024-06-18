@@ -1,11 +1,15 @@
 package DAY4;
 
+import java.util.*;
 public class Longest_Substring {
     public static void main(String[] args) {
-        String s = "abcabcbb";
+        Scanner sc = new Scanner(System.in);
+
+        String s = sc.next();
 
         int ans = lengthOfLongestSubstring(s);
         System.out.println(ans);
+        sc.close();
     
     }
     public static int lengthOfLongestSubstring(String s) {
