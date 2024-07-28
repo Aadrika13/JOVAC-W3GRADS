@@ -22,3 +22,6 @@ public class Count_digits_gfg {
         return c;
     }
 }
+
+// write a java code to print numbrs from 1 to 100 without using loops
+
